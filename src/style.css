@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Mogra&display=swap");
+@import "primeicons/primeicons.css";
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-lora: "Lora", serif;
+  --font-mogra: "Mogra", cursive;
+}
+
+.main {
+  @apply flex min-h-screen text-[#333333] font-inter relative;
+}
+
+.left-panel {
+  @apply w-1/4 max-w-[300px] bg-[#D2B48C];
+}
+
+.category-list {
+  @apply text-center text-xl font-semibold;
+}
+
+.category-list li {
+  @apply cursor-pointer hover:bg-[#E6D3B7] transition-colors py-4;
+}
+
+.category-list li.selected {
+  @apply bg-[#E6D3B7] text-[#795548];
+}
+
+.product-list {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4;
+}
+
+.product-card {
+  @apply shadow-lg rounded-lg mb-4 flex flex-col h-full gap-y-4 relative;
+}
+
+.product-card img {
+  @apply w-full h-56 object-cover mb-2 flex-shrink-0;
+}
+
+.product-content {
+  @apply p-4 flex flex-col gap-y-2 h-full;
+}
+
+.product-name {
+  @apply text-xl font-bold;
+}
+
+/* Price styling */
+.product-price {
+  @apply text-gray-600 font-lora text-xl;
+}
+
+.product-toppings {
+  @apply text-sm text-gray-500 line-clamp-3;
+}
+
+.product-toppings div {
+  @apply inline-block bg-[#F5F5F5] text-[#795548] px-2 py-1 rounded-full mr-1 mb-1;
+}
+
+.button-container {
+  @apply mt-auto pt-2;
+}
+
+.btn-add {
+  @apply cursor-pointer flex items-center justify-center bg-[#795548] text-white px-4 py-2 rounded hover:bg-[#a67c52] transition-colors w-full;
+}
+
+.btn-clear {
+  @apply cursor-pointer flex items-center justify-center bg-white border border-[#795548] text-[#795548] hover:bg-red-100 hover:text-red-500 hover:border-red-500 px-4 py-2 rounded transition-colors w-full;
+}
+
+.order-form-content {
+  @apply flex flex-col gap-y-6;
+}
+
+.order-form-content img {
+  @apply w-full h-80 object-cover mb-2 flex-shrink-0 rounded-t-lg;
+}
+
+.select-toppings {
+  @apply flex flex-wrap gap-2;
+}
+
+.topping-btn {
+  @apply cursor-pointer border border-[#D2B48C] text-[#795548] rounded-full px-2 py-1;
+}
+
+.topping-btn.selected {
+  @apply bg-[#795548] text-white;
+}

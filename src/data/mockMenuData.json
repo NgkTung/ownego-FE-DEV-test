@@ -1,0 +1,394 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Milk Tea",
+      "description": "Premium milk tea with various flavors and toppings"
+    },
+    {
+      "id": 2,
+      "name": "Fruit Tea",
+      "description": "Refreshing fruit-based tea beverages"
+    },
+    {
+      "id": 3,
+      "name": "Coffee",
+      "description": "Classic coffee drinks and specialty brews"
+    },
+    {
+      "id": 4,
+      "name": "Specialty Drinks",
+      "description": "Unique seasonal and signature beverages"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Milk Tea",
+      "price": 4.5,
+      "categoryId": 1,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026420/milk-tea/qejmvbp607zxbxau0wuk.jpg",
+      "toppings": [
+        "Tapioca Pearls",
+        "Grass Jelly",
+        "Pudding",
+        "Extra Sugar",
+        "Less Ice"
+      ],
+      "inventory": {
+        "quantity": 25,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Taro Milk Tea",
+      "price": 5.0,
+      "categoryId": 1,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026451/milk-tea/taro-milk-tea.jpg",
+      "toppings": [
+        "Tapioca Pearls",
+        "Taro Balls",
+        "Pudding",
+        "Whipped Cream",
+        "Less Sugar"
+      ],
+      "inventory": {
+        "quantity": 18,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Thai Milk Tea",
+      "price": 4.8,
+      "categoryId": 1,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026465/milk-tea/dv8mdtf1awp9x7wgjxzt.jpg",
+      "toppings": [
+        "Tapioca Pearls",
+        "Coconut Jelly",
+        "Condensed Milk",
+        "Extra Sweet"
+      ],
+      "inventory": {
+        "quantity": 12,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Matcha Milk Tea",
+      "price": 5.2,
+      "categoryId": 1,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026487/milk-tea/de1xjaxie1op6lwnjpja.jpg",
+      "toppings": [
+        "Red Bean",
+        "Matcha Powder",
+        "Almond Jelly",
+        "Oat Milk",
+        "Half Sugar"
+      ],
+      "inventory": {
+        "quantity": 12,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Brown Sugar Milk Tea",
+      "price": 5.8,
+      "categoryId": 1,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026581/milk-tea/vyi9fgelrj4lmuyudkzd.jpg",
+      "toppings": [
+        "Brown Sugar Pearls",
+        "Fresh Milk",
+        "Extra Brown Sugar",
+        "Whipped Cream"
+      ],
+      "inventory": {
+        "quantity": 4,
+        "status": "low_stock"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Passion Fruit Green Tea",
+      "price": 4.2,
+      "categoryId": 2,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026596/milk-tea/wwxvevz3gajseofzbodk.jpg",
+      "toppings": [
+        "Passion Fruit Pulp",
+        "Lychee Jelly",
+        "Less Sugar",
+        "Extra Ice"
+      ],
+      "inventory": {
+        "quantity": 22,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Mango Green Tea",
+      "price": 4.5,
+      "categoryId": 2,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026614/milk-tea/yvr2z2jp6d35l4fhmanw.jpg",
+      "toppings": [
+        "Fresh Mango",
+        "Mango Popping Pearls",
+        "Coconut Jelly",
+        "No Sugar"
+      ],
+      "inventory": {
+        "quantity": 15,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Lemon Honey Tea",
+      "price": 3.8,
+      "categoryId": 2,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026644/milk-tea/evbdscui795o5ztdkyb6.jpg",
+      "toppings": ["Fresh Lemon", "Honey", "Lemon Slices", "Extra Honey"],
+      "inventory": {
+        "quantity": 30,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Strawberry Fruit Tea",
+      "price": 4.6,
+      "categoryId": 2,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026657/milk-tea/dfxwi7mwnh1qbzuglyzd.jpg",
+      "toppings": [
+        "Fresh Strawberries",
+        "Strawberry Popping Pearls",
+        "Aloe Vera",
+        "Light Sugar"
+      ],
+      "inventory": {
+        "quantity": 8,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Peach Oolong Tea",
+      "price": 4.3,
+      "categoryId": 2,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026669/milk-tea/eof52rwtuhpu6oxukiuu.png",
+      "toppings": ["Peach Slices", "Peach Jelly", "Honey", "Less Ice"],
+      "inventory": {
+        "quantity": 10,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Espresso",
+      "price": 3.5,
+      "categoryId": 3,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026681/milk-tea/tp2u42uvcakuwnnyxkmd.jpg",
+      "toppings": ["Extra Shot", "Sugar", "Honey"],
+      "inventory": {
+        "quantity": 35,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Cappuccino",
+      "price": 4.2,
+      "categoryId": 3,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026709/milk-tea/nnyjxxr3ylsnwsk8ry11.jpg",
+      "toppings": ["Foam Art", "Cinnamon", "Extra Shot", "Vanilla Syrup"],
+      "inventory": {
+        "quantity": 28,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Caffe Latte",
+      "price": 4.8,
+      "categoryId": 3,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026721/milk-tea/dtwwnglqxwwlmdeiuc8l.jpg",
+      "toppings": [
+        "Extra Shot",
+        "Vanilla Syrup",
+        "Caramel Syrup",
+        "Almond Milk",
+        "Oat Milk"
+      ],
+      "inventory": {
+        "quantity": 20,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Iced Coffee",
+      "price": 3.8,
+      "categoryId": 3,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026743/milk-tea/ruw8ucl7jaqurymzdf3a.jpg",
+      "toppings": ["Simple Syrup", "Cream", "Caramel Syrup", "Vanilla Syrup"],
+      "inventory": {
+        "quantity": 3,
+        "status": "low_stock"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Mocha",
+      "price": 5.0,
+      "categoryId": 3,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026756/milk-tea/lly3spmcucqz5bgcqini.jpg",
+      "toppings": [
+        "Whipped Cream",
+        "Chocolate Syrup",
+        "Extra Shot",
+        "Marshmallows"
+      ],
+      "inventory": {
+        "quantity": 16,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Cheese Foam Green Tea",
+      "price": 5.5,
+      "categoryId": 4,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026766/milk-tea/fusne6aag4bhfw4vjmpv.jpg",
+      "toppings": ["Cheese Foam", "Sea Salt", "Tapioca Pearls", "Less Sugar"],
+      "inventory": {
+        "quantity": 9,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Dirty Matcha Latte",
+      "price": 6.0,
+      "categoryId": 4,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026784/milk-tea/nicp4p5dhkqaoagaqavz.jpg",
+      "toppings": ["Matcha Powder", "Espresso Shot", "Oat Milk", "Brown Sugar"],
+      "inventory": {
+        "quantity": 4,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Coconut Milk Tea",
+      "price": 5.3,
+      "categoryId": 4,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026817/milk-tea/iue8neft275ng1t8z39o.jpg",
+      "toppings": [
+        "Coconut Milk",
+        "Coconut Jelly",
+        "Sago Pearls",
+        "Pandan Syrup"
+      ],
+      "inventory": {
+        "quantity": 14,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Butterfly Pea Lemonade",
+      "price": 4.7,
+      "categoryId": 4,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026844/milk-tea/isp00wj0de2ezptsluur.jpg",
+      "toppings": [
+        "Butterfly Pea Flowers",
+        "Fresh Lemon",
+        "Honey",
+        "Color Changing"
+      ],
+      "inventory": {
+        "quantity": 11,
+        "status": "in_stock"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Black Sesame Milk Tea",
+      "price": 5.4,
+      "categoryId": 4,
+      "image": "https://res.cloudinary.com/dige8bejc/image/upload/v1754026857/milk-tea/black-sesame-milk-tea.jpg",
+      "toppings": [
+        "Black Sesame Paste",
+        "Sesame Balls",
+        "Almond Milk",
+        "Rock Sugar"
+      ],
+      "inventory": {
+        "quantity": 2,
+        "status": "low_stock"
+      }
+    }
+  ],
+  "toppings": [
+    "Almond Jelly",
+    "Almond Milk",
+    "Aloe Vera",
+    "Black Sesame Paste",
+    "Brown Sugar",
+    "Brown Sugar Pearls",
+    "Butterfly Pea Flowers",
+    "Caramel Syrup",
+    "Cheese Foam",
+    "Chocolate Syrup",
+    "Cinnamon",
+    "Coconut Jelly",
+    "Coconut Milk",
+    "Color Changing",
+    "Condensed Milk",
+    "Cream",
+    "Espresso Shot",
+    "Extra Brown Sugar",
+    "Extra Honey",
+    "Extra Shot",
+    "Extra Sugar",
+    "Extra Sweet",
+    "Foam Art",
+    "Fresh Lemon",
+    "Fresh Mango",
+    "Fresh Milk",
+    "Fresh Strawberries",
+    "Grass Jelly",
+    "Half Sugar",
+    "Honey",
+    "Lemon Slices",
+    "Less Ice",
+    "Less Sugar",
+    "Light Sugar",
+    "Lychee Jelly",
+    "Mango Popping Pearls",
+    "Marshmallows",
+    "Matcha Powder",
+    "No Sugar",
+    "Oat Milk",
+    "Pandan Syrup",
+    "Passion Fruit Pulp",
+    "Peach Jelly",
+    "Peach Slices",
+    "Pudding",
+    "Red Bean",
+    "Rock Sugar",
+    "Sago Pearls",
+    "Sea Salt",
+    "Sesame Balls",
+    "Simple Syrup",
+    "Strawberry Popping Pearls",
+    "Sugar",
+    "Tapioca Pearls",
+    "Taro Balls",
+    "Vanilla Syrup",
+    "Whipped Cream"
+  ]
+}
