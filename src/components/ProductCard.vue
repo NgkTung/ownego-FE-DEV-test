@@ -4,7 +4,7 @@
       class="top-0 right-0 absolute text-red-500 cursor-pointer"
       @click="useGlobalStore().toggleAddFavourite(product)"
     >
-      <HeartIcon :fill="isFavourite(product) ? 'red' : 'white'" size="30" />
+      <HeartIcon :fill="isFavourite(product) ? 'red' : 'white'" :size="30" />
     </div>
     <img :src="product.image" :alt="product.name" />
     <div class="product-content">
@@ -30,12 +30,9 @@ import { HeartIcon } from "lucide-vue-next";
 import type { Product } from "../types";
 import { storeToRefs } from "pinia";
 
-const props = defineProps({
-  product: {
-    type: Object,
-    required: true,
-  },
-});
+const props = defineProps<{
+  product: Product;
+}>();
 
 const { toggleModal, setSelectedProduct, setMsgConfirmModal } =
   useGlobalStore();

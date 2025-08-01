@@ -74,6 +74,7 @@ import { v4 } from "uuid";
 import { Minus, Plus } from "lucide-vue-next";
 
 import { ref, watch } from "vue";
+import type { CartItem } from "../types";
 
 const globalStore = useGlobalStore();
 const cartStore = useCartStore();
@@ -81,13 +82,13 @@ const { isModalOpen, selectedProduct } = storeToRefs(globalStore);
 const { addToCart } = cartStore;
 
 const quantity = ref(1);
-const selectedTopping = ref(null);
+const selectedTopping = ref("");
 const totalPrice = ref(selectedProduct?.value?.price || 0);
 
 watch(selectedProduct, (newProduct) => {
   if (newProduct) {
     quantity.value = 1;
-    selectedTopping.value = null;
+    selectedTopping.value = "";
     totalPrice.value = newProduct.price;
   }
 });
@@ -109,7 +110,9 @@ const handleAddToCart = () => {
     alert("Please choose one topping");
     return;
   }
-  const newCartItem = {
+  if (selectedProduct === null) return;
+
+  const newCartItem: CartItem = {
     cartId: v4(),
     product: { ...selectedProduct.value },
     quantity: quantity.value,
@@ -122,7 +125,7 @@ const handleAddToCart = () => {
   globalStore.openConfirmModal();
 
   quantity.value = 1;
-  selectedTopping.value = null;
+  selectedTopping.value = "";
   totalPrice.value = selectedProduct?.value?.price || 0;
 };
 </script>

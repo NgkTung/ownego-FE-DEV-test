@@ -1,4 +1,4 @@
-import type { CartItem, Product } from "../types";
+import type { CartItem } from "../types";
 import { defineStore } from "pinia";
 import { ref, computed } from "vue";
 
@@ -88,11 +88,6 @@ export const useCartStore = defineStore("cart", () => {
     items.value = [];
   };
 
-  const getItemQuantity = (productId: number): number => {
-    const item = items.value.find((item) => item.id === productId);
-    return item ? item.quantity : 0;
-  };
-
   return {
     // State
     items,
@@ -107,6 +102,5 @@ export const useCartStore = defineStore("cart", () => {
     // increaseQuantity,
     // decreaseQuantity,
     clearCart,
-    getItemQuantity,
   };
 });
