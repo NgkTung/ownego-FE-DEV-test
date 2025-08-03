@@ -62,6 +62,7 @@ export const useGlobalStore = defineStore("global", () => {
   };
 
   return {
+    //GETTERS
     isDarkMode,
     isModalOpen,
     selectedProduct,
@@ -69,6 +70,8 @@ export const useGlobalStore = defineStore("global", () => {
     filterSelectedToppings,
     favourites,
     msgConfirmModal,
+
+    //SETTERS and ACTIONS
     toggleDarkMode,
     toggleModal,
     setSelectedProduct,

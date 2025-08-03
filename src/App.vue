@@ -39,6 +39,7 @@
       ></Button>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -50,6 +51,7 @@ import Favourites from "./components/Favourites.vue";
 import OrderForm from "./components/OrderForm.vue";
 import ConfirmModal from "./components/ConfirmModal.vue";
 import FilterSearch from "./components/FilterSearch.vue";
+import Footer from "./components/Footer.vue";
 
 import Button from "primevue/button";
 

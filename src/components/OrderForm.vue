@@ -16,7 +16,7 @@
         <!-- <p class="product-price">${{ selectedProduct?.price.toFixed(2) }}</p> -->
 
         <div>
-          <p class="mb-5 text-md">Select your toppings:</p>
+          <p class="mb-5 text-md">Select your topping:</p>
           <div class="select-toppings">
             <button
               v-for="(topping, index) in selectedProduct?.toppings"
